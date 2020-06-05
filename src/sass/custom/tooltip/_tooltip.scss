@@ -1,0 +1,14 @@
+.tooltip {
+  // transition: all 0.1s;
+}
+.tooltip-arrow {
+  display: none;
+}
+.tooltip-inner {
+  color: black !important;
+  border-radius: 5px !important;
+  background-color: white !important;
+  border: 1px solid black !important;
+  width: max-content;
+  white-space: pre-wrap; // Allow line breaks
+}

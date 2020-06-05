@@ -1,0 +1,29 @@
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #62aced;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  transition: all 0.5s;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 200px;
+  margin: 5px;
+  border: 1px solid #aaaaaa;
+  outline: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border: 1px solid #69aced;
+  box-shadow: inset 0px 1px 1px 1px #cccccc;
+}
+input[type="text"]::selection,
+input[type="password"]::selection,
+input[type="email"]::selection {
+  background-color: #eeeeee;
+}

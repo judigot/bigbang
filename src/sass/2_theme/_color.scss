@@ -1,0 +1,201 @@
+$red: red;
+
+$orange: orange;
+
+$green: green;
+
+$blue: blue;
+
+$yellow: invert($blue);
+
+$magenta: magenta;
+
+$cyan: invert($red);
+
+/**************
+ * MAIN THEME */
+$theme: $blue;
+$theme-shades: (
+  shade-1: lighten($theme, 5%),
+  shade-2: lighten($theme, 10%),
+  shade-3: lighten($theme, 15%),
+  shade-4: lighten($theme, 20%),
+  shade-5: lighten($theme, 25%),
+  shade-6: lighten($theme, 30%),
+  shade-7: lighten($theme, 35%),
+  shade-8: lighten($theme, 40%),
+  shade-9: lighten($theme, 45%),
+  shade-10: lighten($theme, 50%),
+  shade-11: lighten($theme, 55%),
+  shade-12: lighten($theme, 60%),
+  shade-13: lighten($theme, 65%),
+  shade-14: lighten($theme, 70%),
+  shade-15: lighten($theme, 75%),
+  shade-16: lighten($theme, 80%),
+  shade-17: lighten($theme, 85%),
+  shade-18: lighten($theme, 90%),
+  shade-19: lighten($theme, 95%),
+  shade-20: lighten($theme, 100%)
+);
+/**************/
+
+$red-shades: (
+  shade-1: lighten($red, 5%),
+  shade-2: lighten($red, 10%),
+  shade-3: lighten($red, 15%),
+  shade-4: lighten($red, 20%),
+  shade-5: lighten($red, 25%),
+  shade-6: lighten($red, 30%),
+  shade-7: lighten($red, 35%),
+  shade-8: lighten($red, 40%),
+  shade-9: lighten($red, 45%),
+  shade-10: lighten($red, 50%),
+  shade-11: lighten($red, 55%),
+  shade-12: lighten($red, 60%),
+  shade-13: lighten($red, 65%),
+  shade-14: lighten($red, 70%),
+  shade-15: lighten($red, 75%),
+  shade-16: lighten($red, 80%),
+  shade-17: lighten($red, 85%),
+  shade-18: lighten($red, 90%),
+  shade-19: lighten($red, 95%),
+  shade-20: lighten($red, 100%)
+);
+
+$orange-shades: (
+  shade-1: lighten($orange, 5%),
+  shade-2: lighten($orange, 10%),
+  shade-3: lighten($orange, 15%),
+  shade-4: lighten($orange, 20%),
+  shade-5: lighten($orange, 25%),
+  shade-6: lighten($orange, 30%),
+  shade-7: lighten($orange, 35%),
+  shade-8: lighten($orange, 40%),
+  shade-9: lighten($orange, 45%),
+  shade-10: lighten($orange, 50%),
+  shade-11: lighten($orange, 55%),
+  shade-12: lighten($orange, 60%),
+  shade-13: lighten($orange, 65%),
+  shade-14: lighten($orange, 70%),
+  shade-15: lighten($orange, 75%),
+  shade-16: lighten($orange, 80%),
+  shade-17: lighten($orange, 85%),
+  shade-18: lighten($orange, 90%),
+  shade-19: lighten($orange, 95%),
+  shade-20: lighten($orange, 100%)
+);
+
+$green-shades: (
+  shade-1: lighten($green, 5%),
+  shade-2: lighten($green, 10%),
+  shade-3: lighten($green, 15%),
+  shade-4: lighten($green, 20%),
+  shade-5: lighten($green, 25%),
+  shade-6: lighten($green, 30%),
+  shade-7: lighten($green, 35%),
+  shade-8: lighten($green, 40%),
+  shade-9: lighten($green, 45%),
+  shade-10: lighten($green, 50%),
+  shade-11: lighten($green, 55%),
+  shade-12: lighten($green, 60%),
+  shade-13: lighten($green, 65%),
+  shade-14: lighten($green, 70%),
+  shade-15: lighten($green, 75%),
+  shade-16: lighten($green, 80%),
+  shade-17: lighten($green, 85%),
+  shade-18: lighten($green, 90%),
+  shade-19: lighten($green, 95%),
+  shade-20: lighten($green, 100%)
+);
+
+$blue-shades: (
+  shade-1: lighten($blue, 5%),
+  shade-2: lighten($blue, 10%),
+  shade-3: lighten($blue, 15%),
+  shade-4: lighten($blue, 20%),
+  shade-5: lighten($blue, 25%),
+  shade-6: lighten($blue, 30%),
+  shade-7: lighten($blue, 35%),
+  shade-8: lighten($blue, 40%),
+  shade-9: lighten($blue, 45%),
+  shade-10: lighten($blue, 50%),
+  shade-11: lighten($blue, 55%),
+  shade-12: lighten($blue, 60%),
+  shade-13: lighten($blue, 65%),
+  shade-14: lighten($blue, 70%),
+  shade-15: lighten($blue, 75%),
+  shade-16: lighten($blue, 80%),
+  shade-17: lighten($blue, 85%),
+  shade-18: lighten($blue, 90%),
+  shade-19: lighten($blue, 95%),
+  shade-20: lighten($blue, 100%)
+);
+
+$yellow-shades: (
+  shade-1: lighten($yellow, 5%),
+  shade-2: lighten($yellow, 10%),
+  shade-3: lighten($yellow, 15%),
+  shade-4: lighten($yellow, 20%),
+  shade-5: lighten($yellow, 25%),
+  shade-6: lighten($yellow, 30%),
+  shade-7: lighten($yellow, 35%),
+  shade-8: lighten($yellow, 40%),
+  shade-9: lighten($yellow, 45%),
+  shade-10: lighten($yellow, 50%),
+  shade-11: lighten($yellow, 55%),
+  shade-12: lighten($yellow, 60%),
+  shade-13: lighten($yellow, 65%),
+  shade-14: lighten($yellow, 70%),
+  shade-15: lighten($yellow, 75%),
+  shade-16: lighten($yellow, 80%),
+  shade-17: lighten($yellow, 85%),
+  shade-18: lighten($yellow, 90%),
+  shade-19: lighten($yellow, 95%),
+  shade-20: lighten($yellow, 100%)
+);
+
+$magenta-shades: (
+  shade-1: lighten($magenta, 5%),
+  shade-2: lighten($magenta, 10%),
+  shade-3: lighten($magenta, 15%),
+  shade-4: lighten($magenta, 20%),
+  shade-5: lighten($magenta, 25%),
+  shade-6: lighten($magenta, 30%),
+  shade-7: lighten($magenta, 35%),
+  shade-8: lighten($magenta, 40%),
+  shade-9: lighten($magenta, 45%),
+  shade-10: lighten($magenta, 50%),
+  shade-11: lighten($magenta, 55%),
+  shade-12: lighten($magenta, 60%),
+  shade-13: lighten($magenta, 65%),
+  shade-14: lighten($magenta, 70%),
+  shade-15: lighten($magenta, 75%),
+  shade-16: lighten($magenta, 80%),
+  shade-17: lighten($magenta, 85%),
+  shade-18: lighten($magenta, 90%),
+  shade-19: lighten($magenta, 95%),
+  shade-20: lighten($magenta, 100%)
+);
+
+$cyan-shades: (
+  shade-1: lighten($cyan, 5%),
+  shade-2: lighten($cyan, 10%),
+  shade-3: lighten($cyan, 15%),
+  shade-4: lighten($cyan, 20%),
+  shade-5: lighten($cyan, 25%),
+  shade-6: lighten($cyan, 30%),
+  shade-7: lighten($cyan, 35%),
+  shade-8: lighten($cyan, 40%),
+  shade-9: lighten($cyan, 45%),
+  shade-10: lighten($cyan, 50%),
+  shade-11: lighten($cyan, 55%),
+  shade-12: lighten($cyan, 60%),
+  shade-13: lighten($cyan, 65%),
+  shade-14: lighten($cyan, 70%),
+  shade-15: lighten($cyan, 75%),
+  shade-16: lighten($cyan, 80%),
+  shade-17: lighten($cyan, 85%),
+  shade-18: lighten($cyan, 90%),
+  shade-19: lighten($cyan, 95%),
+  shade-20: lighten($cyan, 100%)
+);

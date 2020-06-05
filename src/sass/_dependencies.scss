@@ -1,0 +1,16 @@
+/***********
+ * PLUGINS *
+ ***********/
+@import "custom/notify.js/notify.js";
+@import "custom/tooltip/tooltip";
+@import "custom/timepicker/timepicker";
+@import "custom/bootstrap/button";
+@import "custom/bootstrap/modal";
+@import "custom/context_menu/context_menu";
+
+/**************
+ * MAIN STYLE *
+ **************/
+@import "1_base/master_base";
+@import "2_theme/master_theme";
+@import "4_modules/toggle_switch/toggle_switch";

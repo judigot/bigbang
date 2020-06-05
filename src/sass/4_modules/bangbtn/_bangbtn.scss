@@ -1,0 +1,110 @@
+/***********
+ * DEFAULT *
+ ***********/
+$bangbtnTransition: 100ms;
+
+.bangbtn,
+.bangbtn:focus {
+  line-height: 1.42857143;
+  padding: 3.5px 5px 5px 5px;
+  text-align: center;
+  white-space: nowrap;
+  outline: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: none;
+  background-color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: color $bangbtnTransition, background-color $bangbtnTransition, box-shadow $bangbtnTransition;
+}
+
+.bangbtn:hover,
+.bangbtn:active {
+  color: white;
+}
+
+.bangbtn:active {
+  box-shadow: inset 0 5px 20px -2px rgba(0, 0, 0, 0.5);
+}
+
+/***********
+ * DEFAULT *
+ ***********/
+.bangbtn-positive {
+  color: $theme;
+}
+.bangbtn-positive,
+.bangbtn-positive:hover,
+.bangbtn-positive:active {
+  border-color: $theme;
+}
+.bangbtn-positive:hover,
+.bangbtn-positive:active {
+  background-color: $theme;
+}
+
+.bangbtn-negative {
+  color: $gray-5;
+}
+.bangbtn-negative,
+.bangbtn-negative:hover,
+.bangbtn-negative:active {
+  border-color: $gray-5;
+}
+.bangbtn-negative:hover,
+.bangbtn-negative:active {
+  background-color: $gray-5;
+}
+
+.bangbtn-green {
+  color: $green;
+}
+.bangbtn-green,
+.bangbtn-green:hover,
+.bangbtn-green:active {
+  border-color: $green;
+}
+.bangbtn-green:hover,
+.bangbtn-green:active {
+  background-color: $green;
+}
+
+.bangbtn-red {
+  color: $red;
+}
+.bangbtn-red,
+.bangbtn-red:hover,
+.bangbtn-red:active {
+  border-color: $red;
+}
+.bangbtn-red:hover,
+.bangbtn-red:active {
+  background-color: $red;
+}
+
+.bangbtn-yellow {
+  color: $yellow;
+}
+.bangbtn-yellow,
+.bangbtn-yellow:hover,
+.bangbtn-yellow:active {
+  border-color: $yellow;
+}
+.bangbtn-yellow:hover,
+.bangbtn-yellow:active {
+  background-color: $yellow;
+}
+
+.bangbtn-cyan {
+  color: $cyan;
+}
+.bangbtn-cyan,
+.bangbtn-cyan:hover,
+.bangbtn-cyan:active {
+  border-color: $cyan;
+}
+.bangbtn-cyan:hover,
+.bangbtn-cyan:active {
+  background-color: $cyan;
+}

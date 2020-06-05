@@ -1,0 +1,13 @@
+.main-content {
+  margin: 5px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.content {
+  margin-top: 50px; /*Margin-top should be equal to navbar height*/
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+.content-box {
+  display: none;
+}

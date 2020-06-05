@@ -1,0 +1,83 @@
+@import "2_theme/master_theme";
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  //   grid-gap: 10px;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.cell {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shade-name {
+  @extend .radius-2;
+  @extend .shadow-small-2;
+  font-weight: bold;
+  padding: 2px;
+  background-color: white;
+}
+
+.red-1,
+.orange-1,
+.green-1,
+.blue-1,
+.yellow-1,
+.magenta-1,
+.cyan-1 {
+  height: 150px;
+}
+
+@for $i from 1 through 20 {
+  @if $i == 1 {
+    .red-1 {
+      background-color: $red;
+    }
+    .orange-1 {
+      background-color: $orange;
+    }
+    .green-1 {
+      background-color: $green;
+    }
+    .blue-1 {
+      background-color: $blue;
+    }
+    .yellow-1 {
+      background-color: $yellow;
+    }
+    .magenta-1 {
+      background-color: $magenta;
+    }
+    .cyan-1 {
+      background-color: $cyan;
+    }
+  } @else {
+    .red-#{$i} {
+      background-color: map-get($red-shades, "shade-#{$i}");
+    }
+    .orange-#{$i} {
+      background-color: map-get($orange-shades, "shade-#{$i}");
+    }
+    .green-#{$i} {
+      background-color: map-get($green-shades, "shade-#{$i}");
+    }
+    .blue-#{$i} {
+      background-color: map-get($blue-shades, "shade-#{$i}");
+    }
+    .yellow-#{$i} {
+      background-color: map-get($yellow-shades, "shade-#{$i}");
+    }
+    .magenta-#{$i} {
+      background-color: map-get($magenta-shades, "shade-#{$i}");
+    }
+    .cyan-#{$i} {
+      background-color: map-get($cyan-shades, "shade-#{$i}");
+    }
+  }
+}

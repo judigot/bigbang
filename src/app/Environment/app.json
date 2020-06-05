@@ -1,0 +1,16 @@
+{
+    "username": "root",
+    "password": "",
+    "host": "localhost",
+    "mysqlPath": "C:/xampp/mysql/bin",
+    "database": [
+        "appjudigot"
+    ],
+    "table": [
+        "user"
+    ],
+    "appSettings": {
+        "customPrice": true
+    },
+    "appName": "Big Bang"
+}

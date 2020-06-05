@@ -1,0 +1,40 @@
+.modal-backdrop {
+  display: none;
+}
+.modal {
+  margin-top: -10px;
+  padding-top: 100px;
+}
+.modal-dialog {
+  /*Dynamic Modal Size*/
+  width: max-content;
+  border-radius: 10px 10px 0 0 !important;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+.title-bar {
+  color: inherit;
+  font-weight: bold;
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px 10px 0 0 !important;
+  background-color: rgba(92, 172, 237, 0.95);
+}
+.window-title {
+  padding-right: 5px;
+}
+.title-bar-controls {
+  float: right;
+  cursor: pointer;
+}
+.modal-header {
+  text-align: center;
+  border-color: #dddddd;
+}
+.modal-content {
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+.modal-footer {
+  border-color: #dddddd;
+}

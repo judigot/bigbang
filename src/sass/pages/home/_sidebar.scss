@@ -1,0 +1,59 @@
+/*====================SIDEBAR====================*/
+#sidebar {
+  z-index: 1;
+}
+#sidebar-content > .btn {
+  color: #555555;
+  width: 100%;
+  border: none;
+}
+#sidebar-content > .btn:hover {
+  color: white;
+  background-color: #62aced;
+}
+#sidebar-content {
+  height: 100%;
+  width: 200px;
+  padding: 5px;
+  border-right: 1px solid #dddddd;
+  position: fixed;
+}
+.new-box {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #62aced;
+}
+.dropdown-content {
+  display: none;
+  padding: 5px;
+  top: calc(0% + 50px);
+  left: 190px;
+  position: fixed;
+  z-index: 1;
+  background-color: #eeeeee;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px !important;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content .btn {
+  width: 100%;
+  display: block;
+}
+
+.content-selector {
+  color: #555;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+}
+/*====================SIDEBAR====================*/
