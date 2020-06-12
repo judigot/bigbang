@@ -41,12 +41,12 @@ function verifyUser($filePath)
 {
     $jsonPath = (file_exists($filePath)) ? $filePath : $filePath;
     $json = json_decode(file_get_contents($jsonPath), true);
-    $appId = getMACAddress();
+    $licenseKey = getMACAddress();
     $isVerified;
-    if (array_key_exists("appId", $json)) {
-        if (is_array($json["appId"])) {
-            for ($i = 0; $i < count($json["appId"]); $i++) {
-                if (verifyPassword($appId, $json["appId"][$i])) {
+    if (array_key_exists("licenseKey", $json)) {
+        if (is_array($json["licenseKey"])) {
+            for ($i = 0; $i < count($json["licenseKey"]); $i++) {
+                if (verifyPassword($licenseKey, $json["licenseKey"][$i])) {
                     $isVerified = true;
                     break;
                 } else {
@@ -54,10 +54,10 @@ function verifyUser($filePath)
                 }
             }
         } else {
-            $isVerified = verifyPassword($appId, $json["appId"]);
+            $isVerified = verifyPassword($licenseKey, $json["licenseKey"]);
         }
     } else {
-        $json["appId"] = hashPassword($appId);
+        $json["licenseKey"] = hashPassword($licenseKey);
         $fp = fopen($filePath, "wb");
         fwrite($fp, json_encode($json));
         $isVerified = true;
