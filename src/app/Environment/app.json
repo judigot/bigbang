@@ -12,5 +12,6 @@
     "appSettings": {
         "customPrice": true
     },
-    "appName": "Big Bang"
+    "appName": "Big Bang",
+    "appId": "bigbang"
 }
