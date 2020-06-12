@@ -36,11 +36,11 @@ php_value upload_max_filesize 20M
 #====================PHP Values====================#
 
 #====================Error Pages====================#
-ErrorDocument 400 /Projects/Current/Big_Bang/src/error_pages/error.php
-ErrorDocument 401 /Projects/Current/Big_Bang/src/error_pages/error.php
-ErrorDocument 403 /Projects/Current/Big_Bang/src/error_pages/error.php
-ErrorDocument 404 /Projects/Current/Big_Bang/src/error_pages/error.php
-ErrorDocument 504 /Projects/Current/Big_Bang/src/error_pages/error.php
+ErrorDocument 400 /Projects/bigbang/src/error_pages/error.php
+ErrorDocument 401 /Projects/bigbang/src/error_pages/error.php
+ErrorDocument 403 /Projects/bigbang/src/error_pages/error.php
+ErrorDocument 404 /Projects/bigbang/src/error_pages/error.php
+ErrorDocument 504 /Projects/bigbang/src/error_pages/error.php
 #====================Error Pages====================#
 
 #Remove .php extension
