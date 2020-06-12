@@ -111,21 +111,21 @@ class Database
 
     public static function getCredentials()
     {
-        $dbInfoFileName = "app.json";
-        $jsonPath = dirname(__DIR__) . "/Environment/$dbInfoFileName";
-        $dbinfo = json_decode(file_get_contents($jsonPath), true);
+        $appInfoFilename = "app.json";
+        $jsonPath = dirname(__DIR__) . "/Environment/$appInfoFilename";
+        $appInfo = json_decode(file_get_contents($jsonPath), true);
 
-        return $dbinfo;
+        return $appInfo;
     }
 
     public static function connect()
     {
-        $dbinfo = self::getCredentials();
+        $appInfo = self::getCredentials();
 
-        $databaseName = $dbinfo["database"][0];
-        $host = $dbinfo["host"];
-        $username = $dbinfo["username"];
-        $password = $dbinfo["password"];
+        $databaseName = $appInfo["database"][0];
+        $host = $appInfo["host"];
+        $username = $appInfo["username"];
+        $password = $appInfo["password"];
 
         $connection = null;
 
@@ -144,13 +144,13 @@ class Database
 
     public static function dump()
     {
-        $dbinfo = self::getCredentials();
+        $appInfo = self::getCredentials();
 
-        $databases = $dbinfo["database"];
-        $username = $dbinfo["username"];
-        $password = $dbinfo["password"];
-        $appName = $dbinfo["appName"];
-        $mysqlPath = $dbinfo["mysqlPath"];
+        $databases = $appInfo["database"];
+        $username = $appInfo["username"];
+        $password = $appInfo["password"];
+        $appName = $appInfo["appName"];
+        $mysqlPath = $appInfo["mysqlPath"];
 
         date_default_timezone_set("Asia/Manila");
 

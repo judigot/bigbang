@@ -1,14 +1,15 @@
 <?php
 
-$dbInfoFileName = "app.json";
-$jsonPath = dirname(__DIR__) . "/Environment/$dbInfoFileName";
-$dbinfo = json_decode(file_get_contents($jsonPath), true);
+$appInfoFilename = "app.json";
+$jsonPath = dirname(__DIR__) . "/Environment/$appInfoFilename";
+$appInfo = json_decode(file_get_contents($jsonPath), true);
 
-$app_name = $dbinfo["appName"];
+$app_name = $appInfo["appName"];
+$app_id = $appInfo["appId"];
 
-$DatabaseName = $dbinfo["database"][0];
-$Host = $dbinfo["host"];
-$Username = $dbinfo["username"];
-$Password = $dbinfo["password"];
+$DatabaseName = $appInfo["database"][0];
+$Host = $appInfo["host"];
+$Username = $appInfo["username"];
+$Password = $appInfo["password"];
 
-$app_user = $dbinfo["table"][0];
+$app_user = $appInfo["table"][0];
