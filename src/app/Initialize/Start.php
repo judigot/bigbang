@@ -2,13 +2,13 @@
 
 require dirname(__DIR__) . '/Initialize/Htaccess.php';
 
+require dirname(__DIR__) . '/Environment/Environment.php';
+
 require dirname(__DIR__) . '/Initialize/Session.php';
 
 require dirname(__DIR__) . '/Initialize/Routes.php';
 
 require dirname(__DIR__) . '/Initialize/Autoload.php';
-
-require dirname(__DIR__) . '/Environment/Environment.php';
 
 /***************
  * CODE TESTER *

@@ -3,6 +3,7 @@
 namespace App\Classes;
 
 use PDO;
+use PDOException;
 
 class Database
 {
@@ -111,21 +112,21 @@ class Database
 
     public static function getCredentials()
     {
-        $appInfoFilename = "app.json";
-        $jsonPath = dirname(__DIR__) . "/Environment/$appInfoFilename";
-        $appInfo = json_decode(file_get_contents($jsonPath), true);
+        $dbInfoFileName = "app.json";
+        $jsonPath = dirname(__DIR__) . "/Environment/$dbInfoFileName";
+        $dbinfo = json_decode(file_get_contents($jsonPath), true);
 
-        return $appInfo;
+        return $dbinfo;
     }
 
     public static function connect()
     {
-        $appInfo = self::getCredentials();
+        $dbinfo = self::getCredentials();
 
-        $databaseName = $appInfo["database"][0];
-        $host = $appInfo["host"];
-        $username = $appInfo["username"];
-        $password = $appInfo["password"];
+        $databaseName = $dbinfo["database"][0];
+        $host = $dbinfo["host"];
+        $username = $dbinfo["username"];
+        $password = $dbinfo["password"];
 
         $connection = null;
 
@@ -144,13 +145,13 @@ class Database
 
     public static function dump()
     {
-        $appInfo = self::getCredentials();
+        $dbinfo = self::getCredentials();
 
-        $databases = $appInfo["database"];
-        $username = $appInfo["username"];
-        $password = $appInfo["password"];
-        $appName = $appInfo["appName"];
-        $mysqlPath = $appInfo["mysqlPath"];
+        $databases = $dbinfo["database"];
+        $username = $dbinfo["username"];
+        $password = $dbinfo["password"];
+        $appName = $dbinfo["appName"];
+        $mysqlPath = $dbinfo["mysqlPath"];
 
         date_default_timezone_set("Asia/Manila");
 

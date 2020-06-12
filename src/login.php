@@ -15,7 +15,7 @@
                 <a href="index"><img class="quickform-nav" src="images/favicon.png" alt="App logo"></a>
                 <span id="first-name"></span>
                 <div>
-                    <input id="email" class="field" type="email" placeholder="Email" <?php echo isset($_SESSION["userEmail"]) ? " value=\"{$_SESSION["userEmail"]}\"" : false; ?>>
+                    <input id="email" class="field" type="email" placeholder="Email" <?php echo isset($_SESSION["username-$app_id"]) ? " value=\"{$_SESSION["username-$app_id"]}\"" : false; ?>>
                     <input id="password" class="field" type="password" placeholder="Password">
                     <div id="login-result"></div>
                     <button class="btn submit-button" id="login-button">LOG IN</button>

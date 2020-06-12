@@ -9,9 +9,7 @@
     "table": [
         "user"
     ],
-    "appSettings": {
-        "customPrice": true
-    },
+    "appSettings": {},
     "appName": "Big Bang",
-    "appId": "bigbang"
+    "appId": "c8aef4725b5cb56b65c8b566ca8740ac"
 }

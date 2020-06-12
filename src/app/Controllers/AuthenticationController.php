@@ -18,7 +18,7 @@ if (isset($_POST['create'])) {
             $columns = array("first_name", "last_name", "email", "password", "birthdate", "gender", "address", "user_type");
             $data = array(ucwords($_POST["data"]["firstName"]), ucwords($_POST["data"]["lastName"]), $_POST["data"]["email"], hashPassword($_POST["data"]["password"]), null, null, null, "standard");
             Database::create($app_user, $columns, $data);
-            $_SESSION["userEmail"] = $_POST["data"]["email"];
+            $_SESSION["username-$app_id"] = $_POST["data"]["email"];
             array_push($Data, 0);
         } else if ($Result[0]["COUNT(*)"] == "1") {
             array_push($Data, 1);
@@ -39,8 +39,8 @@ if (isset($_POST['read'])) {
         if (!empty($Result)) {
             $Data = array();
             if (verifyPassword($_POST["data"]["password"], $Result[0]["password"])) {
-                $_SESSION["user"] = array("user_id" => $Result[0]["user_id"], "first_name" => $Result[0]["first_name"], "last_name" => $Result[0]["last_name"], "email" => $Result[0]["email"], "password" => $Result[0]["password"], "birthdate" => $Result[0]["birthdate"], "gender" => $Result[0]["gender"], "address" => $Result[0]["address"], "user_type" => $Result[0]["user_type"]);
-                $_SESSION["userEmail"] = $_SESSION["user"]["email"];
+                $_SESSION["username-$app_id"] = $Result[0]["email"];
+                $_SESSION[$app_id] = $Result[0];
                 $Data[] = 0;
             } else {
                 $Data[] = 1;
@@ -53,7 +53,7 @@ if (isset($_POST['read'])) {
     }
 
     if ($_POST['read'] == "logoutUser") {
-        unset($_SESSION["user"]);
+        unset($_SESSION[$app_id]);
     }
 }
 

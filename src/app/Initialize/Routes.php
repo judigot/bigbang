@@ -22,12 +22,12 @@ if (in_array($current_page, $shared_pages) || in_array($current_page, $auth_page
         /*****************************
          * NOT AUTHENTICATED LANDING *
          *****************************/
-        if (!isset($_SESSION["user"])) {
+        if (!isset($_SESSION[$app_id])) {
             header("Location: $project_root/$unauth_redirect");
         }
     }
 } else {
-    if (isset($_SESSION["user"])) {
+    if (isset($_SESSION[$app_id])) {
         /*************************
          * AUTHENTICATED LANDING *
          *************************/
